@@ -1,0 +1,5 @@
+# Base de datos
+database/*.db
+
+# Archivos temporales
+*.log
