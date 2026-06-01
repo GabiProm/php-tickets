@@ -1,6 +1,6 @@
 <?php
 include("config/db.php");
-
+echo __DIR__;
 $sql = "CREATE TABLE IF NOT EXISTS tickets (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     titulo TEXT,
