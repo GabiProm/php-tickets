@@ -28,6 +28,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     echo htmlspecialchars($row['descripcion']) . "<br>";
     echo "Estado: " . htmlspecialchars($row['estado']) . "<br>";
     echo "Fecha: " . $row['fecha_creacion'];
+    echo "<a href='edit.php?id=" . $row['id'] . "'>✏️ Editar</a>";
     echo "</p>";
 
     echo "<hr>";
