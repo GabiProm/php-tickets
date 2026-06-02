@@ -29,6 +29,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     echo "Estado: " . htmlspecialchars($row['estado']) . "<br>";
     echo "Fecha: " . $row['fecha_creacion'];
     echo "<a href='edit.php?id=" . $row['id'] . "'>✏️ Editar</a>";
+    echo " | <a href='delete.php?id=" . $row['id'] . "' onclick='return confirm(\"¿Eliminar este ticket?\")'>🗑️ Eliminar</a>";
     echo "</p>";
 
     echo "<hr>";
